@@ -57,7 +57,7 @@ export default function Products() {
                     </h5>
 
                     <div className="d-flex justify-content-between px-1">
-                      <p> {product.price} EGP</p>
+                      <p> {product.price} $</p>
                       <p>
                         {product.rating.rate}
                         <i className="fas fa-star rating-color ms-1"></i>
