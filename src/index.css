@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+:root {
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+    rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+    rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+  --font-family: "Encode Sans Expanded", sans-serif;
+  --rating-color: #ffc908;
+}
+
+body {
+  font-family: var(--font-family) !important;
+  /* background-image: url("assets/images/light-patten.svg"); */
+  background-position: center;
+  background-size: cover;
+}
+.rating-color {
+  color: var(--rating-color);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+.product:hover {
+  box-shadow: var(--shadow) !important;
+  border: solid 1px var(--main-color) !important;
+}
+.product .btn {
+  transition: transform 1s, opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.font-sm {
+  font-size: 14px;
+}
+.text-main {
+  color: var(--main-color) !important;
+}
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+
+.bg-main-light-50 {
+  background-color: var(--light-color) !important;
+  opacity: 0.9;
+}
+
+.max-height {
+  height: 350px;
+}
+
+.form-control {
+  border-color: #0aad0a;
+}
+
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  border-color: #0aad0a;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(10 173 10 / 25%);
+}
+
+/* FOOTER */
+
+.master {
+  width: 50px;
+}
+.store {
+  width: 95px;
+}
+/* *******forget-content****** */
+.forget-content {
+  margin: 200px 0;
+  /* padding: 100px 100px; */
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgb(10 173 10 / 25%);
+}
+/* FOOTER */
+
+/* LOADER */
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #0aad0a 94%, #0000) top/8px 8px
+      no-repeat,
+    conic-gradient(#0000 30%, #0aad0a);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: l13 1s infinite linear;
+}
+
+@keyframes l13 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* LOADER */
+
+@media screen and (max-width: 576px) {
+  body {
+    background-image: none;
+  }
+}
+
+.img-h {
+  height: 280px;
+  padding: 20px;
+}
